@@ -804,3 +804,36 @@ footer p:last-child {
         transition: none
     }
 }
+/* SIGA Case Study — atualização visual inspirada em portfolio editorial */
+:root{--blue:#0c4c83;--deep:#082f57;--green:#398e4d;--ink:#17364c;--muted:#607789;--line:#dce9e3}
+body{background:#fff}
+.nav{box-shadow:0 4px 28px #092f4b09}
+.hero{min-height:690px;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:3vw;background:#fff;padding-top:86px;padding-bottom:85px}
+.hero h1{font-size:clamp(42px,5.2vw,78px);letter-spacing:-.065em}
+.hero h1 em{color:var(--green)}
+.hero-art{min-height:430px}
+.hero-mockup{width:100%;position:relative;z-index:2}
+.hero-mockup img{width:100%;display:block;object-fit:contain;filter:drop-shadow(0 22px 26px #082c4d16)}
+.eyebrow{color:var(--green)}
+.section-tag{color:var(--green)}
+.about{background:#378a49;color:white;gap:5vw}
+.about h2,.about p,.about .section-tag{color:white}
+.about .metrics div{background:#ffffff19;border:1px solid #ffffff38}
+.about .metrics strong{color:#d9f5d5}
+.features{background:#f6faf7;color:var(--ink)}
+.features .section-tag.light{color:var(--green)}
+.cards article{border:1px solid #e1ede5;box-shadow:0 14px 30px #123d2310}
+.showcase{background:#fff}
+.screen-board{background:#f6faf8;border:0;box-shadow:none;padding:25px}
+.screen-note{font-size:12px;color:var(--muted);text-align:center;margin-top:15px}
+.steps{background:#f8fafb}
+.step-grid article{border-top-color:#a5cfad}
+.tech-section{background:#fff}
+.tech-section h2{font-size:clamp(30px,3.2vw,50px);letter-spacing:-.04em;margin:16px 0}
+.tech-section>p{color:var(--muted);line-height:1.7}
+.tech-pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.tech-pills span{border:1px solid #d9e9e0;background:#f4faf6;color:var(--deep);border-radius:999px;padding:12px 20px;font-weight:700;font-size:14px}
+.impact{background:#e8f4ec}
+.cta{background:linear-gradient(120deg,#083c72,#0b6299 60%,#348f50)}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:30px}.hero-art{min-height:0}.hero-mockup{max-width:660px;margin:auto}}
+@media(max-width:600px){.hero{padding:48px 20px 45px;display:grid}.hero-art{display:block;min-height:0}.hero-mockup img{width:100%}.screen-board{padding:10px}.tech-pills span{font-size:12px;padding:10px 14px}}
