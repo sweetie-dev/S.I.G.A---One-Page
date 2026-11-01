@@ -837,3 +837,33 @@ body{background:#fff}
 .cta{background:linear-gradient(120deg,#083c72,#0b6299 60%,#348f50)}
 @media(max-width:850px){.hero{grid-template-columns:1fr;gap:30px}.hero-art{min-height:0}.hero-mockup{max-width:660px;margin:auto}}
 @media(max-width:600px){.hero{padding:48px 20px 45px;display:grid}.hero-art{display:block;min-height:0}.hero-mockup img{width:100%}.screen-board{padding:10px}.tech-pills span{font-size:12px;padding:10px 14px}}
+
+
+/* Motion design: subtle, responsive and accessible */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > * {animation: sigaEnter .75s both cubic-bezier(.2,.7,.2,1)}
+  .hero-copy > :nth-child(2) {animation-delay:.12s}
+  .hero-copy > :nth-child(3) {animation-delay:.22s}
+  .hero-copy > :nth-child(4) {animation-delay:.32s}
+  .hero-copy > :nth-child(5) {animation-delay:.42s}
+  .hero-mockup {animation:sigaEnter 1s .25s both}
+  .hero-mockup img {animation:sigaFloat 6s 1.25s ease-in-out infinite}
+  .reveal-ready {opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal-ready.is-visible {opacity:1;transform:translateY(0)}
+  .cards article,.metrics div,.step-grid article,.impact-list span,.tech-pills span {
+    transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease
+  }
+  .cards article:hover,.metrics div:hover,.impact-list span:hover {transform:translateY(-6px);box-shadow:0 22px 44px #123d2320}
+  .step-grid article:hover {transform:translateY(-4px);border-color:var(--green)}
+  .tech-pills span:hover {transform:translateY(-3px);border-color:var(--green)}
+  .btn {transition:transform .25s ease,box-shadow .25s ease}
+  .btn:hover {box-shadow:0 16px 32px #07559d35}
+  .screen-board img {transition:transform .5s ease}
+  .screen-board:hover img {transform:scale(1.015)}
+  @keyframes sigaEnter {from {opacity:0;transform:translateY(24px)}to {opacity:1;transform:translateY(0)}}
+  @keyframes sigaFloat {0%,100% {transform:translateY(0)}50% {transform:translateY(-12px)}}
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-ready {opacity:1!important;transform:none!important;transition:none!important}
+  .hero-mockup img,.hero-copy > * {animation:none!important}
+}
