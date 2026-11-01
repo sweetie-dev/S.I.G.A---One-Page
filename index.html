@@ -87,6 +87,33 @@
     </section>
 
     <section class="cta"><div><span>S.I.G.A • BELÉM</span><h2>Uma cidade mais limpa começa com informação.</h2><p>Tecnologia e consciência trabalhando juntas para cuidar de Belém.</p><a class="btn white" href="#inicio">Voltar ao início ↑</a></div></section>
+
+    <section id="avaliacao" class="section rating-section" aria-labelledby="rating-title">
+      <div class="rating-panel">
+        <span class="section-tag">SUA OPINIÃO IMPORTA</span>
+        <h2 id="rating-title">O que você achou do S.I.G.A?</h2>
+        <p>Avalie nosso protótipo de 1 a 5 estrelas. Sua resposta é anônima e nos ajuda a melhorar.</p>
+        <form id="rating-form" name="avaliacoes-siga" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="avaliacoes-siga">
+          <p class="rating-trap"><label>Não preencha este campo: <input name="bot-field"></label></p>
+          <fieldset class="rating-fieldset">
+            <legend>Sua nota</legend>
+            <div class="rating-stars" aria-label="Selecione uma nota">
+              <label><input type="radio" name="nota" value="1" required><span aria-hidden="true">★</span><span class="sr-only">1 estrela</span></label>
+              <label><input type="radio" name="nota" value="2"><span aria-hidden="true">★</span><span class="sr-only">2 estrelas</span></label>
+              <label><input type="radio" name="nota" value="3"><span aria-hidden="true">★</span><span class="sr-only">3 estrelas</span></label>
+              <label><input type="radio" name="nota" value="4"><span aria-hidden="true">★</span><span class="sr-only">4 estrelas</span></label>
+              <label><input type="radio" name="nota" value="5"><span aria-hidden="true">★</span><span class="sr-only">5 estrelas</span></label>
+            </div>
+          </fieldset>
+          <label class="rating-comment-label" for="rating-comment">Sugestão (opcional)</label>
+          <textarea id="rating-comment" name="sugestao" maxlength="500" rows="3" placeholder="O que podemos melhorar?"></textarea>
+          <button class="btn" type="submit">Enviar avaliação</button>
+          <p id="rating-message" class="rating-message" role="status" aria-live="polite"></p>
+        </form>
+        <p class="rating-disclaimer">Não solicitamos nome nem e-mail. Para evitar envios acidentais repetidos, este navegador registra a avaliação após o envio.</p>
+      </div>
+    </section>
   </main>
   <footer><img src="./assets/logo-siga.png" alt="S.I.G.A" loading="lazy"><p>Protótipo acadêmico • Sistema Integrado de Gestão e Acompanhamento</p><p>Belém — Pará</p></footer>
 </body>
