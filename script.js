@@ -28,3 +28,21 @@ document.addEventListener('click', event => {
 window.addEventListener('resize', () => {
   if (window.innerWidth > 850) closeMenu();
 });
+
+
+/* Reveal sections only when motion is enabled and observers are supported. */
+if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches && 'IntersectionObserver' in window) {
+  const targets = document.querySelectorAll('.about > div, .section-head, .cards article, .metrics div, .screen-board, .step-grid article, .tech-section > *, .impact > div, .impact-list span, .cta > div');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.08, rootMargin:'0px 0px -20px 0px'});
+  targets.forEach(el => {
+    el.classList.add('reveal-ready');
+    observer.observe(el);
+  });
+}
