@@ -930,3 +930,16 @@ body{background:#fff}
 .rating-layout .rating-message{font-size:14px}
 @media(max-width:800px){.rating-layout{grid-template-columns:1fr;gap:30px}.rating-intro{max-width:100%}.rating-intro h2{font-size:clamp(34px,8vw,48px)}}
 @media(max-width:480px){.rating-layout .rating-panel{padding:24px 20px}.rating-layout .rating-stars{gap:4px}.rating-layout .rating-stars label{font-size:38px}}
+
+/* SIGA Android download */
+.app-download{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(225px,.7fr);align-items:center;gap:clamp(24px,4vw,64px);margin:clamp(36px,5vw,66px) auto 0;max-width:1310px;padding:clamp(26px,4vw,54px);border-radius:26px;background:#2a793b;color:#fff;box-shadow:0 18px 45px #17432625}
+.app-download-tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.12em;color:#d5f3db}
+.app-download h3{margin:12px 0 14px;font-size:clamp(26px,3vw,40px);line-height:1.15;letter-spacing:-.035em;color:#fff}
+.app-download p{font-size:clamp(14px,1.2vw,17px);line-height:1.7;color:#f1f9f2;margin:0;max-width:650px}
+.app-download-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.app-download-meta span{display:inline-flex;border:1px solid #ffffff70;border-radius:100px;padding:7px 12px;font-size:12px;font-weight:600;color:#fff}
+.app-download-action{display:flex;flex-direction:column;align-items:stretch;gap:12px;text-align:center}
+.app-download-pending{display:inline-flex;justify-content:center;align-items:center;gap:11px;background:#e8f2e9;color:#31513b;border-radius:12px;min-height:58px;padding:15px 18px;font-weight:800;font-size:16px;cursor:not-allowed}
+.app-download-action small{display:block;font-size:12px;line-height:1.6;color:#e0efe4}
+@media(max-width:800px){.app-download{grid-template-columns:1fr;gap:26px}.app-download-action{align-items:stretch}}
+@media(max-width:480px){.app-download{border-radius:20px;padding:27px 22px}.app-download-meta{gap:6px}.app-download-meta span{font-size:11px;padding:6px 9px}}
