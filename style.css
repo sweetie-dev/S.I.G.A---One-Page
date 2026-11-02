@@ -1,7 +1,7 @@
 :root {
     --blue: #07559d;
     --deep: #063f7d;
-    --green: #49aa36;
+    --green: #2a793b;
     --ink: #153653;
     --muted: #61788d;
     --line: #dce9f1
@@ -805,7 +805,7 @@ footer p:last-child {
     }
 }
 /* SIGA Case Study — atualização visual inspirada em portfolio editorial */
-:root{--blue:#0c4c83;--deep:#082f57;--green:#398e4d;--ink:#17364c;--muted:#607789;--line:#dce9e3}
+:root{--blue:#0c4c83;--deep:#082f57;--green:#2a793b;--ink:#17364c;--muted:#607789;--line:#dce9e3}
 body{background:#fff}
 .nav{box-shadow:0 4px 28px #092f4b09}
 .hero{min-height:690px;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:3vw;background:#fff;padding-top:86px;padding-bottom:85px}
@@ -816,7 +816,7 @@ body{background:#fff}
 .hero-mockup img{width:100%;display:block;object-fit:contain;filter:drop-shadow(0 22px 26px #082c4d16)}
 .eyebrow{color:var(--green)}
 .section-tag{color:var(--green)}
-.about{background:#378a49;color:white;gap:5vw}
+.about{background:#2a793b;color:white;gap:5vw}
 .about h2,.about p,.about .section-tag{color:white}
 .about .metrics div{background:#ffffff19;border:1px solid #ffffff38}
 .about .metrics strong{color:#d9f5d5}
