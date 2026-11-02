@@ -89,10 +89,16 @@
    
 
     <section id="avaliacao" class="section rating-section" aria-labelledby="rating-title">
-      <div class="rating-panel">
-        <span class="section-tag">SUA OPINIÃO IMPORTA</span>
-        <h2 id="rating-title">O que você achou do S.I.G.A?</h2>
-        <p>Avalie nosso protótipo de 1 a 5 estrelas. Sua resposta é anônima e nos ajuda a melhorar.</p>
+      <div class="rating-layout">
+        <div class="rating-intro">
+          <span class="section-tag">SUA OPINIÃO IMPORTA</span>
+          <h2 id="rating-title">Sua opinião ajuda o S.I.G.A a evoluir.</h2>
+          <p>O que você achou do aplicativo? Conte para nós! Sua avaliação ajuda a tornar o SIGA mais simples, útil e acessível para todos.</p>
+          <div class="rating-intro-detail"><span aria-hidden="true">★ ★ ★ ★ ★</span><p>Leva menos de um minuto para participar.</p></div>
+        </div>
+        <div class="rating-panel">
+          <h3>Avalie sua experiência</h3>
+          <p>Escolha de 1 a 5 estrelas e, se quiser, deixe uma sugestão.</p>
         <form id="rating-form" name="avaliacoes-siga" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="avaliacoes-siga">
           <p class="rating-trap"><label>Não preencha este campo: <input name="bot-field"></label></p>
@@ -111,7 +117,8 @@
           <button class="btn" type="submit">Enviar avaliação</button>
           <p id="rating-message" class="rating-message" role="status" aria-live="polite"></p>
         </form>
-        <p class="rating-disclaimer">este navegador registra a avaliação após o envio.</p>
+          <p class="rating-disclaimer">Sua avaliação é anônima. Este navegador registra quando uma avaliação já foi enviada.</p>
+        </div>
       </div>
     </section>
      <section class="cta"><div><span>S.I.G.A • BELÉM</span><h2>Uma cidade mais limpa começa com informação.</h2><p>Tecnologia e consciência trabalhando juntas para cuidar de Belém.</p><a class="btn white" href="#inicio">Voltar ao início ↑</a></div></section>
