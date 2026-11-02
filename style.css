@@ -939,7 +939,9 @@ body{background:#fff}
 .app-download-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
 .app-download-meta span{display:inline-flex;border:1px solid #ffffff70;border-radius:100px;padding:7px 12px;font-size:12px;font-weight:600;color:#fff}
 .app-download-action{display:flex;flex-direction:column;align-items:stretch;gap:12px;text-align:center}
-.app-download-pending{display:inline-flex;justify-content:center;align-items:center;gap:11px;background:#e8f2e9;color:#31513b;border-radius:12px;min-height:58px;padding:15px 18px;font-weight:800;font-size:16px;cursor:not-allowed}
+.app-download-btn{display:inline-flex;justify-content:center;align-items:center;gap:11px;background:#fff;color:#245e34;border-radius:12px;min-height:58px;padding:15px 18px;font-weight:800;font-size:16px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+.app-download-btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px #123c2740}
+.app-download-btn:focus-visible{outline:3px solid #d5f3db;outline-offset:4px}
 .app-download-action small{display:block;font-size:12px;line-height:1.6;color:#e0efe4}
 @media(max-width:800px){.app-download{grid-template-columns:1fr;gap:26px}.app-download-action{align-items:stretch}}
 @media(max-width:480px){.app-download{border-radius:20px;padding:27px 22px}.app-download-meta{gap:6px}.app-download-meta span{font-size:11px;padding:6px 9px}}
