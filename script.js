@@ -32,7 +32,7 @@ window.addEventListener('resize', () => {
 
 /* Reveal sections only when motion is enabled and observers are supported. */
 if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches && 'IntersectionObserver' in window) {
-  const targets = document.querySelectorAll('.about > div, .section-head, .cards article, .metrics div, .screen-board, .step-grid article, .tech-section > *, .impact > div, .impact-list span, .cta > div');
+  const targets = document.querySelectorAll('.about > div, .section-head, .screen-board, .step-grid article, .tech-section > *, .cta > div');
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
